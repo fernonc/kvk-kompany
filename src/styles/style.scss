@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+$base-color: #00526e;
+$base-font: "Roboto", sans-serif;
+$lightGray: #e2e2e2;
+$darkGray: #606060;
+
+//MAIN
+body {
+  font-family: $base-font;
+}
+.bold {
+  font-weight: 500;
+}
+#root {
+  position: relative;
+  min-height: 100vh;
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+//SEARCH
+.resultDropdown li {
+  cursor: pointer;
+  list-style-type: none;
+  padding:15px 20px;
+}
+.resultDropdown li:hover {
+  background-color: $lightGray;
+}
+.companyAddress {
+  line-height: 1.8rem;
+  color: $darkGray;
+}
+.results .name {
+  font-size: 1.4rem;
+  color: $base-color;
+  font-weight: 400;
+}
+//SEARCH RESULTS
+.companyDetails ul {
+  padding-left: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.companyDetails ul li {
+  list-style-type: none;
+  text-align: justify;
+}
+
+//RESPONSIVE
+@media screen and (max-width: 767px) {
+  .companyDetails {
+    text-align: center;
+  }
+  .companyDetails .logo {
+    margin-bottom: 20px;
+  }
+}
